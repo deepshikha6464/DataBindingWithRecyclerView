@@ -1,8 +1,10 @@
-package com.example.databindngwithrecyclerview;
+package com.example.databindngwithrecyclerview.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.databindngwithrecyclerview.R;
 
 public class MainActivity extends AppCompatActivity {
 
