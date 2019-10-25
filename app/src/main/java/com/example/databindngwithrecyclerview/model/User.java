@@ -16,7 +16,7 @@ public class User extends BaseObservable {
     private static final String TAG = "User";
 
    //vars
-    private String name, email, profileImage, about;
+    private String name, email, profileImage, about, mkite;
 
     public ObservableField<Long> numberOfFollowers = new ObservableField<>();
     public ObservableField<Long> numberOfPosts = new ObservableField<>();
@@ -75,7 +75,7 @@ public class User extends BaseObservable {
         notifyPropertyChanged(BR.about);
     }
 
-    @BindingAdapter({"profileImage"})
+    @BindingAdapter({"android:profileImage"})
     public  static  void loadImage(ImageView view , String url){
         Glide.with(view.getContext()).load(url).apply(RequestOptions.circleCropTransform()).into(view);
     }
